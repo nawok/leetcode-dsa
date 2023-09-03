@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  update-env:
+    cmds:
+      - rustup update
+  dev:
+    cmds:
+      - cargo watch -x clippy -x test
