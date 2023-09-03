@@ -4,6 +4,7 @@ tasks:
   update-env:
     cmds:
       - rustup update
+      - cargo install cargo-watch
   dev:
     cmds:
       - cargo watch -x clippy -x test
