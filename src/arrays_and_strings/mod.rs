@@ -3,6 +3,7 @@ mod get_averages;
 mod longest_ones;
 mod min_start_value;
 mod reverse_string;
+mod reverse_words;
 mod running_sum;
 mod sorted_squares;
 
@@ -11,5 +12,6 @@ pub use get_averages::*;
 pub use longest_ones::*;
 pub use min_start_value::*;
 pub use reverse_string::*;
+pub use reverse_words::*;
 pub use running_sum::*;
 pub use sorted_squares::*;
