@@ -1,11 +1,5 @@
 pub fn reverse_words(s: String) -> String {
-    s.chars()
-        .rev()
-        .collect::<String>()
-        .split_whitespace()
-        .rev()
-        .collect::<Vec<_>>()
-        .join(" ")
+    s.chars().rev().collect::<String>().split_whitespace().rev().collect::<Vec<_>>().join(" ")
 }
 
 #[cfg(test)]

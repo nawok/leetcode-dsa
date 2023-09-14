@@ -1,8 +1,6 @@
 pub fn missing_number(nums: Vec<i32>) -> i32 {
     let mut missing = nums.len() as i32;
-    nums.iter()
-        .enumerate()
-        .for_each(|(idx, num)| missing ^= idx as i32 ^ num);
+    nums.iter().enumerate().for_each(|(idx, num)| missing ^= idx as i32 ^ num);
     missing
 }
 

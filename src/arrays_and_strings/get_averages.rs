@@ -12,9 +12,7 @@ pub fn get_averages(nums: Vec<i32>, k: i32) -> Vec<i32> {
     }
 
     let mut window_sum = 0i64;
-    nums.iter()
-        .take(2 * k + 1)
-        .for_each(|&i| window_sum += i as i64);
+    nums.iter().take(2 * k + 1).for_each(|&i| window_sum += i as i64);
     avgs[k] = (window_sum / (2 * k + 1) as i64) as i32;
 
     for i in 2 * k + 1..n {

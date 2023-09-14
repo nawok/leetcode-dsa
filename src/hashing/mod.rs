@@ -1,7 +1,6 @@
-mod check_if_pangram;
-mod count_elements;
-mod missing_number;
-
-pub use check_if_pangram::*;
-pub use count_elements::*;
-pub use missing_number::*;
+pub mod check_if_pangram;
+pub mod count_elements;
+pub mod find_winners;
+pub mod largest_unique_number;
+pub mod max_number_of_balloons;
+pub mod missing_number;

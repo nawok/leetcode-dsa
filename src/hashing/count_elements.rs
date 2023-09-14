@@ -1,6 +1,8 @@
+use std::collections::HashSet;
+
 pub fn count_elements(arr: Vec<i32>) -> i32 {
     let mut count = 0;
-    let set = arr.iter().collect::<std::collections::HashSet<_>>();
+    let set = arr.iter().collect::<HashSet<_>>();
     for num in arr.iter() {
         if set.contains(&(num + 1)) {
             count += 1;

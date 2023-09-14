@@ -1,14 +1,12 @@
+use std::cmp::max;
+
 pub fn find_max_average(nums: Vec<i32>, k: i32) -> f64 {
     let k = k as usize;
     let mut curr_sum = nums.iter().take(k).sum::<i32>();
     let mut max_sum = curr_sum;
     for i in k..nums.len() {
         curr_sum += nums[i] - nums[i - k];
-        max_sum = if curr_sum > max_sum {
-            curr_sum
-        } else {
-            max_sum
-        };
+        max_sum = max(curr_sum, max_sum)
     }
     (max_sum as f64) / (k as f64)
 }

@@ -1,3 +1,5 @@
+use std::cmp::max;
+
 pub fn longest_ones(nums: Vec<i32>, k: i32) -> i32 {
     let mut max_len = 0;
     let mut curr_zeros = 0;
@@ -16,11 +18,7 @@ pub fn longest_ones(nums: Vec<i32>, k: i32) -> i32 {
         }
 
         let curr_len = right - left + 1;
-        max_len = if curr_len > max_len {
-            curr_len
-        } else {
-            max_len
-        };
+        max_len = max(curr_len, max_len);
     }
 
     max_len as i32
