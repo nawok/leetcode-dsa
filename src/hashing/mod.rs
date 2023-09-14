@@ -1,6 +1,9 @@
+pub mod can_construct;
 pub mod check_if_pangram;
 pub mod count_elements;
 pub mod find_winners;
 pub mod largest_unique_number;
+pub mod length_of_longest_substring;
 pub mod max_number_of_balloons;
 pub mod missing_number;
+pub mod num_jewels_in_stones;
