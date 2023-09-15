@@ -1,8 +1,9 @@
 version: '3'
 
 tasks:
-  update-env:
+  update:
     cmds:
+      - rustup install nightly
       - rustup update
       - cargo install cargo-watch
   dev:
