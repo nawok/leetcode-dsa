@@ -1,5 +1,6 @@
 pub mod delete_duplicates;
 pub mod middle_node;
+pub mod reverse_between;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
